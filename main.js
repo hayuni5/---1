@@ -1,7 +1,7 @@
     var container = document.getElementById('map');
     var options = {
         center: new kakao.maps.LatLng(37.554669851798046, 127.0945711919892),
-        level: 1
+        level: 2
     }
     var map = new kakao.maps.Map(container, options);
     var positions = [
@@ -25,7 +25,6 @@
     var imageSrc = "https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/markerStar.png";
 
     positions.forEach(function(pos){
-        console.log(pos);
         var imageSize = new kakao.maps.Size(22,33);
         var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize);
         var marker = new kakao.maps.Marker({

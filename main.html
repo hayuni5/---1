@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>두부두부</title>
+    <meta property="og:title" content="어느 두부?"/>
+    <meta property="og:description" content="어디가 좋겠늬?"/>
+    <meta property="og:image" content="두부두부.png"/>
+
+    <!-- services와 clusterer, drawing 라이브러리 불러오기 -->
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=70430e23ecbb332f792c360dd4d76da9&libraries=services,clusterer,drawing"></script>
+    
+    <style>
+        .mapHere {
+            position: relative;
+            width:100%;
+            padding-top: 56.25%;
+            border: 1px solid dimgray;
+        }
+    </style>
+</head>
+<body>
+    <div id="map" class="mapHere"></div>
+    <script src="main.js"></script>
+</body>
+</html>

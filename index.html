@@ -17,12 +17,58 @@
             position: relative;
             width:100%;
             padding-top: 66.66%;
-            border: 1px solid dimgray;
+            /* border: 1px solid dimgray; */
+        }
+
+        .priceCompareTable {
+            display: flex;
+            justify-content: center;
+            width: 80%;
+            margin: 3% 10%;
+            border: 3px solid lightcoral;
+            border-radius: 10px;
+            padding: 1%;
+        }
+
+        .priceCompareTable>div {
+            flex: 1;
+            text-align: center;
+            padding-inline: 5%;
+            border-right: 1px dotted dimgrey;
+        }
+
+        .priceCompareTable>div:last-child {
+            border: 0;
+        }
+
+        .priceCompareTable>div>div:first-child {
+            border-top: 2px solid lightcoral;
+        }
+
+        .priceCompareTable>div>div {
+            border-top: 1px solid lightcoral;
         }
     </style>
 </head>
 <body>
     <div id="map" class="mapHere"></div>
+    <div class="priceCompareTable">
+        <div class="tofuParadise">두부천국
+            <div class="price1">두부부침+볶음김치 15.</div>
+            <div>감자채전 13.</div>
+            <div>막걸리 2~3</div>
+        </div>
+        <div class="ourTofu">우리콩밭손두부
+            <div class="price2">두부삼겹두루치기 20.</div>
+            <div>해물부추전 10.</div>
+            <div>막걸리 2.5</div>
+        </div>
+        <div class="gamasot">가마솥손두부
+            <div class="price3">두부김치 12.</div>
+            <div>해물부추전 10.</div>
+            <div>막걸리 2.5</div>
+        </div>
+    </div>
     <script src="main.js"></script>
 </body>
 </html>
